@@ -1,0 +1,430 @@
+{
+  "schemaVersion": "1.0.0",
+  "claims": [
+    {
+      "claimId": "claim:corpus-coverage",
+      "category": "corpus",
+      "title": "选定传世底本闭包完整",
+      "domain": {
+        "name": "selected-transmitted-base-2026-10-29",
+        "cardinality": 1132
+      },
+      "axioms": [
+        "definition:selected-corpus"
+      ],
+      "evidence": [
+        "artifact:corpus-manifest"
+      ],
+      "boundary": "本闭包只针对选定、固定的传世底本版本；不包括且不覆盖出土本、全部异文与历代注疏，不等于周易全部历史文本或唯一解释。",
+      "status": "verified"
+    },
+    {
+      "claimId": "claim:closed-axioms",
+      "category": "closed-system",
+      "title": "有限对象公理存在显式模型",
+      "domain": {
+        "name": "ZFC 元理论、经典逻辑与有限对象理论",
+        "cardinality": 20
+      },
+      "axioms": [
+        "axiom:zfc-choice",
+        "axiom:logic-two-valued",
+        "axiom:semantic-corpus"
+      ],
+      "evidence": [
+        "proof:closed-system-validation"
+      ],
+      "boundary": "“完全”仅指由本证书定义的固定语料、符号、语义公理与合法公式；历史原意、注疏和现实效力按定义排除，不属于反例。无限多个可重复书写的公式由一个终止判定程序覆盖，而非逐字符串列出。",
+      "status": "proved"
+    },
+    {
+      "claimId": "claim:closed-bijection",
+      "category": "closed-system",
+      "title": "全部固定段落与规范序号双射",
+      "domain": {
+        "name": "固定语料 P 与序号集 {0,…,1131}",
+        "cardinality": 1132
+      },
+      "axioms": [
+        "axiom:semantic-corpus",
+        "axiom:semantic-ordinal",
+        "axiom:semantic-text"
+      ],
+      "evidence": [
+        "proof:closed-system-validation"
+      ],
+      "boundary": "“完全”仅指由本证书定义的固定语料、符号、语义公理与合法公式；历史原意、注疏和现实效力按定义排除，不属于反例。无限多个可重复书写的公式由一个终止判定程序覆盖，而非逐字符串列出。",
+      "status": "proved"
+    },
+    {
+      "claimId": "claim:closed-completeness",
+      "category": "closed-system",
+      "title": "全部合法公式可判定并生成证明或反证",
+      "domain": {
+        "name": "四类有限原子关系的全部实例",
+        "cardinality": 1366324
+      },
+      "axioms": [
+        "axiom:logic-two-valued",
+        "axiom:logic-compositional",
+        "axiom:semantic-state",
+        "axiom:semantic-order"
+      ],
+      "evidence": [
+        "proof:closed-system-validation"
+      ],
+      "boundary": "“完全”仅指由本证书定义的固定语料、符号、语义公理与合法公式；历史原意、注疏和现实效力按定义排除，不属于反例。无限多个可重复书写的公式由一个终止判定程序覆盖，而非逐字符串列出。",
+      "status": "proved"
+    },
+    {
+      "claimId": "claim:structure:b6-involutions",
+      "category": "structure",
+      "title": "theorem:b6-involutions",
+      "domain": {
+        "name": "B6 的 64 个状态",
+        "cardinality": 64
+      },
+      "axioms": [
+        "axiom:b6",
+        "axiom:bit-order",
+        "axiom:complement",
+        "axiom:reverse"
+      ],
+      "evidence": [
+        "theorem:b6-involutions"
+      ],
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "status": "proved"
+    },
+    {
+      "claimId": "claim:structure:pair-lattice-laws",
+      "category": "structure",
+      "title": "theorem:pair-lattice-laws",
+      "domain": {
+        "name": "B6×B6 的 4096 个有序对",
+        "cardinality": 4096
+      },
+      "axioms": [
+        "axiom:b6",
+        "axiom:bitwise-lattice",
+        "axiom:hamming"
+      ],
+      "evidence": [
+        "theorem:pair-lattice-laws"
+      ],
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "status": "proved"
+    },
+    {
+      "claimId": "claim:structure:triple-distributive-lattice",
+      "category": "structure",
+      "title": "theorem:triple-distributive-lattice",
+      "domain": {
+        "name": "B6³ 的 262144 个有序三元组",
+        "cardinality": 262144
+      },
+      "axioms": [
+        "axiom:b6",
+        "axiom:bitwise-lattice"
+      ],
+      "evidence": [
+        "theorem:triple-distributive-lattice"
+      ],
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "status": "proved"
+    },
+    {
+      "claimId": "claim:structure:hamming-bfs",
+      "category": "structure",
+      "title": "theorem:hamming-bfs",
+      "domain": {
+        "name": "Q6 上 4096 个有序点对",
+        "cardinality": 4096
+      },
+      "axioms": [
+        "axiom:b6",
+        "axiom:hamming",
+        "axiom:single-line-edge"
+      ],
+      "evidence": [
+        "theorem:hamming-bfs"
+      ],
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "status": "proved"
+    },
+    {
+      "claimId": "claim:structure:b3-product",
+      "category": "structure",
+      "title": "theorem:b3-product",
+      "domain": {
+        "name": "B3×B3 的 64 个状态",
+        "cardinality": 64
+      },
+      "axioms": [
+        "axiom:trigram-split"
+      ],
+      "evidence": [
+        "theorem:b3-product"
+      ],
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "status": "proved"
+    },
+    {
+      "claimId": "claim:structure:q6-neighborhood",
+      "category": "structure",
+      "title": "theorem:q6-neighborhood",
+      "domain": {
+        "name": "Q6 的 64 个顶点",
+        "cardinality": 64
+      },
+      "axioms": [
+        "axiom:single-line-edge"
+      ],
+      "evidence": [
+        "theorem:q6-neighborhood"
+      ],
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "status": "proved"
+    },
+    {
+      "claimId": "claim:structure:klein-action",
+      "category": "structure",
+      "title": "theorem:klein-action",
+      "domain": {
+        "name": "错综作用的 64 个状态",
+        "cardinality": 64
+      },
+      "axioms": [
+        "axiom:complement",
+        "axiom:reverse"
+      ],
+      "evidence": [
+        "theorem:klein-action"
+      ],
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "status": "proved"
+    },
+    {
+      "claimId": "claim:structure:nuclear-domain",
+      "category": "structure",
+      "title": "theorem:nuclear-domain",
+      "domain": {
+        "name": "互卦映射的 64 个状态",
+        "cardinality": 64
+      },
+      "axioms": [
+        "axiom:nuclear-lines"
+      ],
+      "evidence": [
+        "theorem:nuclear-domain"
+      ],
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "status": "proved"
+    },
+    {
+      "claimId": "claim:structure:transformed-xor",
+      "category": "structure",
+      "title": "theorem:transformed-xor",
+      "domain": {
+        "name": "变爻 XOR 的 64 个掩码",
+        "cardinality": 64
+      },
+      "axioms": [
+        "axiom:xor"
+      ],
+      "evidence": [
+        "theorem:transformed-xor"
+      ],
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "status": "proved"
+    },
+    {
+      "claimId": "claim:structure:king-wen-permutation",
+      "category": "structure",
+      "title": "theorem:king-wen-permutation",
+      "domain": {
+        "name": "文王序的 64 个位置",
+        "cardinality": 64
+      },
+      "axioms": [
+        "source:king-wen-order"
+      ],
+      "evidence": [
+        "theorem:king-wen-permutation"
+      ],
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "status": "proved"
+    },
+    {
+      "claimId": "claim:structure:trigram-matrix",
+      "category": "structure",
+      "title": "theorem:trigram-matrix",
+      "domain": {
+        "name": "上下卦矩阵的 64 个格位",
+        "cardinality": 64
+      },
+      "axioms": [
+        "axiom:trigram-split"
+      ],
+      "evidence": [
+        "theorem:trigram-matrix"
+      ],
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "status": "proved"
+    },
+    {
+      "claimId": "claim:structure:line-predicates",
+      "category": "structure",
+      "title": "theorem:line-predicates",
+      "domain": {
+        "name": "爻位谓词的 64 个状态",
+        "cardinality": 64
+      },
+      "axioms": [
+        "axiom:bit-order",
+        "source:traditional-rules"
+      ],
+      "evidence": [
+        "theorem:line-predicates"
+      ],
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "status": "proved"
+    },
+    {
+      "claimId": "claim:traditional-rules",
+      "category": "traditional",
+      "title": "爻位传统谓词的显式实现",
+      "domain": {
+        "name": "64 卦、每卦六爻的版本化谓词",
+        "cardinality": 64
+      },
+      "axioms": [
+        "source:traditional-rules"
+      ],
+      "evidence": [
+        "rule:traditional-v1"
+      ],
+      "boundary": "只实现得位、应、比、承、乘的版本化操作定义；流派表述与义理解释仍需人工校勘。",
+      "status": "bounded"
+    },
+    {
+      "claimId": "claim:fca-complete",
+      "category": "fca-graph",
+      "title": "固定形式背景的 FCA 概念全枚举",
+      "domain": {
+        "name": "5 属性固定形式背景",
+        "cardinality": 18
+      },
+      "axioms": [
+        "definition:fca-context"
+      ],
+      "evidence": [
+        "artifact:formal-concepts"
+      ],
+      "boundary": "完整性只对已声明的五个属性成立，不代表经典文本的全部概念。",
+      "status": "verified"
+    },
+    {
+      "claimId": "claim:evidence-closure",
+      "category": "fca-graph",
+      "title": "可见声明具备直接证据边",
+      "domain": {
+        "name": "统一声明注册表",
+        "cardinality": 24
+      },
+      "axioms": [
+        "definition:formal-scope"
+      ],
+      "evidence": [
+        "proof:evidence-graph-validation"
+      ],
+      "boundary": "闭环证明可追溯性，不证明传统解释的唯一性。",
+      "status": "verified"
+    },
+    {
+      "claimId": "claim:axiom-dag",
+      "category": "fca-graph",
+      "title": "公理依赖图无环且依赖存在",
+      "domain": {
+        "name": "版本化公理依赖图",
+        "cardinality": 27
+      },
+      "axioms": [
+        "definition:formal-scope"
+      ],
+      "evidence": [
+        "proof:axiom-dag-validation"
+      ],
+      "boundary": "DAG 检查只覆盖本项目显式登记的公理和来源。",
+      "status": "verified"
+    },
+    {
+      "claimId": "claim:model-checking",
+      "category": "model-info",
+      "title": "12 关完整历史会话状态模型检查",
+      "domain": {
+        "name": "固定种子 12 关预算内全部可达有序历史状态",
+        "cardinality": 12
+      },
+      "axioms": [
+        "definition:finite-transition-system"
+      ],
+      "evidence": [
+        "proof:model-checking"
+      ],
+      "boundary": "完整穷举固定 12 关预算内所有可达有序历史会话状态及登记命令；不把 state+remainingBudget 当作撤销语义的等价约简，也不覆盖浏览器、计时或未登记命令。",
+      "status": "proved"
+    },
+    {
+      "claimId": "claim:storage-migration",
+      "category": "model-info",
+      "title": "存储迁移输入类检查",
+      "domain": {
+        "name": "版本化存储输入等价类",
+        "cardinality": 7
+      },
+      "axioms": [
+        "definition:finite-transition-system"
+      ],
+      "evidence": [
+        "proof:storage-migration"
+      ],
+      "boundary": "等价类覆盖不等于穷尽任意浏览器或恶意存储实现。",
+      "status": "verified"
+    },
+    {
+      "claimId": "claim:descriptive-statistics",
+      "category": "model-info",
+      "title": "状态与语料的描述性信息统计",
+      "domain": {
+        "name": "B6 状态空间与固定语料样本",
+        "cardinality": 64
+      },
+      "axioms": [
+        "definition:formal-scope"
+      ],
+      "evidence": [
+        "artifact:descriptive-statistics"
+      ],
+      "boundary": "这些分布与熵仅描述固定的 64 状态空间和固定语料样本；不推出经典语义、因果关系或预测效力。",
+      "status": "verified"
+    },
+    {
+      "claimId": "claim:semantic-boundary",
+      "category": "traditional",
+      "title": "未形式化语义边界",
+      "domain": {
+        "name": "作者原意、义理唯一性与预测效力",
+        "cardinality": 1
+      },
+      "axioms": [
+        "definition:formal-scope"
+      ],
+      "evidence": [
+        "source:traditional-rules"
+      ],
+      "boundary": "作者原意、唯一义理、占筮与预测效力均不在有限结构证明范围内。",
+      "status": "unresolved"
+    }
+  ]
+}

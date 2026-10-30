@@ -1,0 +1,2116 @@
+{
+  "schemaVersion": "1.3.0",
+  "algorithmVersion": "finite-enumerator-1.3.0",
+  "inputHashes": {
+    "algorithmSources": "21f5fc48c9e94bc7d6e06b4d7ebaf421ea1dc46646961fa73e0b5480761690eb",
+    "axioms": "53569136c38d2c1f2dcb211c2c2879259da49de133e9a13e240992534bcc0ad8",
+    "relations": "91cff9096d574e83894339dcdebe64d8faa57a425e4aba833a620d24c6044022",
+    "corpusManifest": "293cf322a4fc7edb010aa071b9df481eb4d8144fd2090ecad245ca46a417c92b"
+  },
+  "coverage": [
+    "B6",
+    "B3xB3",
+    "Q6",
+    "hamming-bfs",
+    "klein",
+    "nuclear",
+    "transformed",
+    "king-wen",
+    "trigram-matrix",
+    "line-predicates"
+  ],
+  "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+  "claims": [
+    "固定源码、固定输入与显式公理内的有限状态结构穷举"
+  ],
+  "theorems": [
+    {
+      "theoremId": "theorem:b6-involutions",
+      "family": "structure",
+      "domain": {
+        "name": "B6 的 64 个状态",
+        "cardinality": 64
+      },
+      "axioms": [
+        "axiom:b6",
+        "axiom:bit-order",
+        "axiom:complement",
+        "axiom:reverse"
+      ],
+      "evaluatorHash": "85c04ea9ab7cf758c0595aac4eac54fbeb88a70450d3be828019c7d393b2a51f",
+      "status": "proved",
+      "evaluatedInputs": 64,
+      "totalFailures": 0,
+      "counterexamples": [],
+      "counterexamplesTruncated": false,
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "resultHash": "8d04ded5733695de4cf89b7ee3c884b41a1b487d713397ac57ec3705cc7e1534"
+    },
+    {
+      "theoremId": "theorem:pair-lattice-laws",
+      "family": "structure",
+      "domain": {
+        "name": "B6×B6 的 4096 个有序对",
+        "cardinality": 4096
+      },
+      "axioms": [
+        "axiom:b6",
+        "axiom:bitwise-lattice",
+        "axiom:hamming"
+      ],
+      "evaluatorHash": "240e2342069f5030fd643f513669f67a66260539b3a16a0bffc4e33fb9754c60",
+      "status": "proved",
+      "evaluatedInputs": 4096,
+      "totalFailures": 0,
+      "counterexamples": [],
+      "counterexamplesTruncated": false,
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "resultHash": "12de54c81be8ae7bd99cb24109846e75ddcfef1deabc7a47c9615cd887fcc27b"
+    },
+    {
+      "theoremId": "theorem:triple-distributive-lattice",
+      "family": "structure",
+      "domain": {
+        "name": "B6³ 的 262144 个有序三元组",
+        "cardinality": 262144
+      },
+      "axioms": [
+        "axiom:b6",
+        "axiom:bitwise-lattice"
+      ],
+      "evaluatorHash": "5647bca8aeed482aeb66d250497ae917e260ee77a392b689481c4f78215bbbfb",
+      "status": "proved",
+      "evaluatedInputs": 262144,
+      "totalFailures": 0,
+      "counterexamples": [],
+      "counterexamplesTruncated": false,
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "resultHash": "1502a522ca57d70d6cdf8bdb87a759b82fde05c7f331730e4bb819459d09f080"
+    },
+    {
+      "theoremId": "theorem:hamming-bfs",
+      "family": "structure",
+      "domain": {
+        "name": "Q6 上 4096 个有序点对",
+        "cardinality": 4096
+      },
+      "axioms": [
+        "axiom:b6",
+        "axiom:hamming",
+        "axiom:single-line-edge"
+      ],
+      "evaluatorHash": "6535f72daaeef230899a897035858fb59941fc82ef59c50a983ba249f89b44b1",
+      "status": "proved",
+      "evaluatedInputs": 4096,
+      "totalFailures": 0,
+      "counterexamples": [],
+      "counterexamplesTruncated": false,
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "resultHash": "ee20f8df50b46b5f26be8985e781b97454260b23e46ca2b9c76574599af52700"
+    },
+    {
+      "theoremId": "theorem:b3-product",
+      "family": "structure",
+      "domain": {
+        "name": "B3×B3 的 64 个状态",
+        "cardinality": 64
+      },
+      "axioms": [
+        "axiom:trigram-split"
+      ],
+      "evaluatorHash": "11de30a0d052eff6e447a15079060e2569b38c617a46a493b84972edceabb470",
+      "status": "proved",
+      "evaluatedInputs": 64,
+      "totalFailures": 0,
+      "counterexamples": [],
+      "counterexamplesTruncated": false,
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "resultHash": "1c9d2a6f60ce4a76205b25deadcb5a4d45f8a366149b05fe7769589117fdcd3a"
+    },
+    {
+      "theoremId": "theorem:q6-neighborhood",
+      "family": "structure",
+      "domain": {
+        "name": "Q6 的 64 个顶点",
+        "cardinality": 64
+      },
+      "axioms": [
+        "axiom:single-line-edge"
+      ],
+      "evaluatorHash": "be1916421b3ae4fd10f10875a58725905030b7df81c0067b7f6d182e3a186ada",
+      "status": "proved",
+      "evaluatedInputs": 64,
+      "totalFailures": 0,
+      "counterexamples": [],
+      "counterexamplesTruncated": false,
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "resultHash": "f7d9a69a4634c7ff549a3e8b45cb1afbdd28563c5edb4e8c4740ef699dacfc93"
+    },
+    {
+      "theoremId": "theorem:klein-action",
+      "family": "structure",
+      "domain": {
+        "name": "错综作用的 64 个状态",
+        "cardinality": 64
+      },
+      "axioms": [
+        "axiom:complement",
+        "axiom:reverse"
+      ],
+      "evaluatorHash": "9b9171e26682a3d58ec9bdca911e8fd6e629d6ad05a16e4e67fea4b0d9e48654",
+      "status": "proved",
+      "evaluatedInputs": 64,
+      "totalFailures": 0,
+      "counterexamples": [],
+      "counterexamplesTruncated": false,
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "resultHash": "3a4d90f001ef56390108254d5a33f96320382ac83e6cfb4af1c31f765fd8b087"
+    },
+    {
+      "theoremId": "theorem:nuclear-domain",
+      "family": "structure",
+      "domain": {
+        "name": "互卦映射的 64 个状态",
+        "cardinality": 64
+      },
+      "axioms": [
+        "axiom:nuclear-lines"
+      ],
+      "evaluatorHash": "9aef582b99595a302ae6e47499f62f874c10f3baf59df72aabbb3fbea4df07e6",
+      "status": "proved",
+      "evaluatedInputs": 64,
+      "totalFailures": 0,
+      "counterexamples": [],
+      "counterexamplesTruncated": false,
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "resultHash": "249d5af4faa6b9883f5315dd189835c0a6f9249d5a2858eaaad3baa52c8bca95"
+    },
+    {
+      "theoremId": "theorem:transformed-xor",
+      "family": "structure",
+      "domain": {
+        "name": "变爻 XOR 的 64 个掩码",
+        "cardinality": 64
+      },
+      "axioms": [
+        "axiom:xor"
+      ],
+      "evaluatorHash": "e9ee8e496aaa499dd86a9c9f9a0b7b3e46a669ac861025801eb91796235d4752",
+      "status": "proved",
+      "evaluatedInputs": 64,
+      "totalFailures": 0,
+      "counterexamples": [],
+      "counterexamplesTruncated": false,
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "resultHash": "e6fd9394a28ef7443532fe47f2ccabadb8beaef7b94294bf25dea58fd780a23f"
+    },
+    {
+      "theoremId": "theorem:king-wen-permutation",
+      "family": "structure",
+      "domain": {
+        "name": "文王序的 64 个位置",
+        "cardinality": 64
+      },
+      "axioms": [
+        "source:king-wen-order"
+      ],
+      "evaluatorHash": "22f5467ef907f1f27d3cec0d2905ac6467992e84f387752d92104fb027d5ad85",
+      "status": "proved",
+      "evaluatedInputs": 64,
+      "totalFailures": 0,
+      "counterexamples": [],
+      "counterexamplesTruncated": false,
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "resultHash": "7851e4acdfa3d1d5e2eb94cd32524164d27b29d1b98f1649ba27d9f0e03ccc0a"
+    },
+    {
+      "theoremId": "theorem:trigram-matrix",
+      "family": "structure",
+      "domain": {
+        "name": "上下卦矩阵的 64 个格位",
+        "cardinality": 64
+      },
+      "axioms": [
+        "axiom:trigram-split"
+      ],
+      "evaluatorHash": "99262b0695eb2b4c46112cdc3df7678bfe12fab73968a1ea771dc737ce0d0596",
+      "status": "proved",
+      "evaluatedInputs": 64,
+      "totalFailures": 0,
+      "counterexamples": [],
+      "counterexamplesTruncated": false,
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "resultHash": "4109c8824e4b1e73202e73f5500ba47cfd143789716e7baf9bca9a72e8957b90"
+    },
+    {
+      "theoremId": "theorem:line-predicates",
+      "family": "structure",
+      "domain": {
+        "name": "爻位谓词的 64 个状态",
+        "cardinality": 64
+      },
+      "axioms": [
+        "axiom:bit-order",
+        "source:traditional-rules"
+      ],
+      "evaluatorHash": "0df0e2271b4affbf560177231bc714cbd5282328c8542d8d12a9abad1246917e",
+      "status": "proved",
+      "evaluatedInputs": 64,
+      "totalFailures": 0,
+      "counterexamples": [],
+      "counterexamplesTruncated": false,
+      "boundary": "仅证明显式公理下的有限结构命题；不证明唯一语义或作者原意，也不可推出占筮或预测效力。",
+      "resultHash": "7710b16b8eac46b81f98f4ae0edcefd9fa2cdb9ddda1402b60c0023f91428b68"
+    }
+  ],
+  "modelChecking": {
+    "algorithmVersion": "complete-history-session-model-checker-2.0.0",
+    "seed": 20261029,
+    "inputDomain": {
+      "state": "B6 = {0,1}^6",
+      "stateCardinality": 64,
+      "levelCount": 12,
+      "sessionState": "(state, steps, status, ordered history)",
+      "commands": "all allowed apply actions + undo + restart + illegal apply + hint",
+      "storageInputClasses": [
+        "current-valid",
+        "legacy-valid",
+        "malformed-json",
+        "wrong-types",
+        "out-of-range",
+        "future-version",
+        "unknown-fields"
+      ]
+    },
+    "inputHash": "144fbbfbdfad3313a7866b12a696776bdd32558d46c19226fc43f8f7e0009c86",
+    "levels": [
+      {
+        "level": 1,
+        "inputHash": "465c31cbfa8bfb97b8d7755c1a3ff748bc89a96de15d4c42655f35bab9e8286d",
+        "stateProjection": "state+steps+status+ordered-history",
+        "finiteDomains": {
+          "state": 64,
+          "remainingBudget": 5,
+          "status": 3,
+          "historyMaxLength": 4,
+          "historySequenceUpperBound": 1555,
+          "commandAlphabet": 10
+        },
+        "theoreticalUpperBound": 1555,
+        "visitedStates": 1471,
+        "transitionCount": 14710,
+        "reachableStateSetHash": "19527d95fa578d873173ecb6cf255c4e682c728820c356bbb4e91b22d983bf36",
+        "transitionRelationHash": "b6142498b9583c4f4542956327252a4f44326444f2d616cccb91a428915c731b",
+        "historyProjectionCollisions": 1391,
+        "commandCoverage": {
+          "allowedApply": 8826,
+          "undo": 1471,
+          "restart": 1471,
+          "illegalApply": 1471,
+          "hint": 1471,
+          "terminalSettlementApply": 7356,
+          "budgetExhaustionTerminalStates": 1180,
+          "completedTerminalStates": 46
+        },
+        "reachable": true,
+        "shortestSteps": 2,
+        "shortestActions": [
+          {
+            "type": "flip",
+            "line": 0
+          },
+          {
+            "type": "flip",
+            "line": 1
+          }
+        ],
+        "budgetFailureVerified": true,
+        "invariants": {
+          "illegalActionIsNoop": true,
+          "hintIsReadOnly": true,
+          "settlementIsIdempotent": true,
+          "undoRestoresState": true,
+          "restartRestoresInitialState": true
+        },
+        "invariantChecks": {
+          "historyConsistency": {
+            "checked": 1471,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "illegalActionIsNoop": {
+            "checked": 1471,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "hintIsReadOnly": {
+            "checked": 1471,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "settlementIsIdempotent": {
+            "checked": 7356,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "undoRestoresState": {
+            "checked": 1471,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "restartRestoresInitialState": {
+            "checked": 1471,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "allowedApplySemantics": {
+            "checked": 1470,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "budgetExhaustionComplete": {
+            "checked": 1180,
+            "failures": 0,
+            "counterexamples": []
+          }
+        },
+        "budget": 4,
+        "start": 0,
+        "target": 3,
+        "allowedActions": [
+          {
+            "type": "flip",
+            "line": 0
+          },
+          {
+            "type": "flip",
+            "line": 1
+          },
+          {
+            "type": "flip",
+            "line": 2
+          },
+          {
+            "type": "flip",
+            "line": 3
+          },
+          {
+            "type": "flip",
+            "line": 4
+          },
+          {
+            "type": "flip",
+            "line": 5
+          }
+        ],
+        "boundary": "穷举固定关卡预算内所有可达的有序历史会话状态及全部允许动作、撤销、重开、非法动作和提示；不覆盖浏览器、计时或未登记命令。",
+        "resultHash": "0cab45a7109003744f2ae78bb6e4e580682a2845b03d5e1c66f2af3ad27c06f2"
+      },
+      {
+        "level": 2,
+        "inputHash": "f10be0442eb996d5ecfdc6f54dc3a0fc94d19ed3b55c690485ca569bfa79a926",
+        "stateProjection": "state+steps+status+ordered-history",
+        "finiteDomains": {
+          "state": 64,
+          "remainingBudget": 4,
+          "status": 3,
+          "historyMaxLength": 3,
+          "historySequenceUpperBound": 259,
+          "commandAlphabet": 10
+        },
+        "theoreticalUpperBound": 259,
+        "visitedStates": 217,
+        "transitionCount": 2170,
+        "reachableStateSetHash": "977b66d5bdb74e429af975c66826c81134021699276426e1e4e562076d416352",
+        "transitionRelationHash": "393fd303837d88ea4c9ff6d23a7fb1cf98edc46e16bbad79c317f8a18c8f67a2",
+        "historyProjectionCollisions": 168,
+        "commandCoverage": {
+          "allowedApply": 1302,
+          "undo": 217,
+          "restart": 217,
+          "illegalApply": 217,
+          "hint": 217,
+          "terminalSettlementApply": 1086,
+          "budgetExhaustionTerminalStates": 170,
+          "completedTerminalStates": 11
+        },
+        "reachable": true,
+        "shortestSteps": 1,
+        "shortestActions": [
+          {
+            "type": "flip",
+            "line": 2
+          }
+        ],
+        "budgetFailureVerified": true,
+        "invariants": {
+          "illegalActionIsNoop": true,
+          "hintIsReadOnly": true,
+          "settlementIsIdempotent": true,
+          "undoRestoresState": true,
+          "restartRestoresInitialState": true
+        },
+        "invariantChecks": {
+          "historyConsistency": {
+            "checked": 217,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "illegalActionIsNoop": {
+            "checked": 217,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "hintIsReadOnly": {
+            "checked": 217,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "settlementIsIdempotent": {
+            "checked": 1086,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "undoRestoresState": {
+            "checked": 217,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "restartRestoresInitialState": {
+            "checked": 217,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "allowedApplySemantics": {
+            "checked": 216,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "budgetExhaustionComplete": {
+            "checked": 170,
+            "failures": 0,
+            "counterexamples": []
+          }
+        },
+        "budget": 3,
+        "start": 1,
+        "target": 5,
+        "allowedActions": [
+          {
+            "type": "flip",
+            "line": 0
+          },
+          {
+            "type": "flip",
+            "line": 1
+          },
+          {
+            "type": "flip",
+            "line": 2
+          },
+          {
+            "type": "flip",
+            "line": 3
+          },
+          {
+            "type": "flip",
+            "line": 4
+          },
+          {
+            "type": "flip",
+            "line": 5
+          }
+        ],
+        "boundary": "穷举固定关卡预算内所有可达的有序历史会话状态及全部允许动作、撤销、重开、非法动作和提示；不覆盖浏览器、计时或未登记命令。",
+        "resultHash": "8ffccb6f05b9aaec4379a041c1e8de022f482d656a8c2be00d1a307cc316b639"
+      },
+      {
+        "level": 3,
+        "inputHash": "9c3a5b09555e2dbc290063573a1aa9f3427cfac042030437195b538a7c383f1e",
+        "stateProjection": "state+steps+status+ordered-history",
+        "finiteDomains": {
+          "state": 64,
+          "remainingBudget": 4,
+          "status": 3,
+          "historyMaxLength": 3,
+          "historySequenceUpperBound": 259,
+          "commandAlphabet": 10
+        },
+        "theoreticalUpperBound": 259,
+        "visitedStates": 217,
+        "transitionCount": 2170,
+        "reachableStateSetHash": "4be0ea23e767278c54ebc9521e192781f3957ce9563dc28e0b19078f7c871cce",
+        "transitionRelationHash": "3c31ba89d17c9c4ede3a143ad5ad14ddd0247e8246255979f9f3193fa6480031",
+        "historyProjectionCollisions": 168,
+        "commandCoverage": {
+          "allowedApply": 1302,
+          "undo": 217,
+          "restart": 217,
+          "illegalApply": 217,
+          "hint": 217,
+          "terminalSettlementApply": 1086,
+          "budgetExhaustionTerminalStates": 170,
+          "completedTerminalStates": 11
+        },
+        "reachable": true,
+        "shortestSteps": 1,
+        "shortestActions": [
+          {
+            "type": "flip",
+            "line": 4
+          }
+        ],
+        "budgetFailureVerified": true,
+        "invariants": {
+          "illegalActionIsNoop": true,
+          "hintIsReadOnly": true,
+          "settlementIsIdempotent": true,
+          "undoRestoresState": true,
+          "restartRestoresInitialState": true
+        },
+        "invariantChecks": {
+          "historyConsistency": {
+            "checked": 217,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "illegalActionIsNoop": {
+            "checked": 217,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "hintIsReadOnly": {
+            "checked": 217,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "settlementIsIdempotent": {
+            "checked": 1086,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "undoRestoresState": {
+            "checked": 217,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "restartRestoresInitialState": {
+            "checked": 217,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "allowedApplySemantics": {
+            "checked": 216,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "budgetExhaustionComplete": {
+            "checked": 170,
+            "failures": 0,
+            "counterexamples": []
+          }
+        },
+        "budget": 3,
+        "start": 5,
+        "target": 21,
+        "allowedActions": [
+          {
+            "type": "flip",
+            "line": 0
+          },
+          {
+            "type": "flip",
+            "line": 1
+          },
+          {
+            "type": "flip",
+            "line": 2
+          },
+          {
+            "type": "flip",
+            "line": 3
+          },
+          {
+            "type": "flip",
+            "line": 4
+          },
+          {
+            "type": "flip",
+            "line": 5
+          }
+        ],
+        "boundary": "穷举固定关卡预算内所有可达的有序历史会话状态及全部允许动作、撤销、重开、非法动作和提示；不覆盖浏览器、计时或未登记命令。",
+        "resultHash": "5e8e77af3b8042c5c4e7e112d44a94e295876362086d10b6b395349daeccefc1"
+      },
+      {
+        "level": 4,
+        "inputHash": "ac0bb6b3da318c8642fab4f847723c863a0d50e2cef689bc42c02467491db4c5",
+        "stateProjection": "state+steps+status+ordered-history",
+        "finiteDomains": {
+          "state": 64,
+          "remainingBudget": 6,
+          "status": 3,
+          "historyMaxLength": 5,
+          "historySequenceUpperBound": 19608,
+          "commandAlphabet": 11
+        },
+        "theoreticalUpperBound": 19608,
+        "visitedStates": 19104,
+        "transitionCount": 210144,
+        "reachableStateSetHash": "c476743d2f9628f41dcb1f556a14ad6d70034014cff11ba0d988c41f322b8660",
+        "transitionRelationHash": "fa59f3b64643782e48ffaa4ecca54938bcfea1f4947d3473bfba7de837cbd498",
+        "historyProjectionCollisions": 18912,
+        "commandCoverage": {
+          "allowedApply": 133728,
+          "undo": 19104,
+          "restart": 19104,
+          "illegalApply": 19104,
+          "hint": 19104,
+          "terminalSettlementApply": 114625,
+          "budgetExhaustionTerminalStates": 16087,
+          "completedTerminalStates": 288
+        },
+        "reachable": true,
+        "shortestSteps": 3,
+        "shortestActions": [
+          {
+            "type": "complement"
+          },
+          {
+            "type": "flip",
+            "line": 2
+          },
+          {
+            "type": "flip",
+            "line": 3
+          }
+        ],
+        "budgetFailureVerified": true,
+        "invariants": {
+          "illegalActionIsNoop": true,
+          "hintIsReadOnly": true,
+          "settlementIsIdempotent": true,
+          "undoRestoresState": true,
+          "restartRestoresInitialState": true
+        },
+        "invariantChecks": {
+          "historyConsistency": {
+            "checked": 19104,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "illegalActionIsNoop": {
+            "checked": 19104,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "hintIsReadOnly": {
+            "checked": 19104,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "settlementIsIdempotent": {
+            "checked": 114625,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "undoRestoresState": {
+            "checked": 19104,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "restartRestoresInitialState": {
+            "checked": 19104,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "allowedApplySemantics": {
+            "checked": 19103,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "budgetExhaustionComplete": {
+            "checked": 16087,
+            "failures": 0,
+            "counterexamples": []
+          }
+        },
+        "budget": 5,
+        "start": 3,
+        "target": 48,
+        "allowedActions": [
+          {
+            "type": "complement"
+          },
+          {
+            "type": "flip",
+            "line": 0
+          },
+          {
+            "type": "flip",
+            "line": 1
+          },
+          {
+            "type": "flip",
+            "line": 2
+          },
+          {
+            "type": "flip",
+            "line": 3
+          },
+          {
+            "type": "flip",
+            "line": 4
+          },
+          {
+            "type": "flip",
+            "line": 5
+          }
+        ],
+        "boundary": "穷举固定关卡预算内所有可达的有序历史会话状态及全部允许动作、撤销、重开、非法动作和提示；不覆盖浏览器、计时或未登记命令。",
+        "resultHash": "77ab94ec5e7b091420be6c7d4339aaca59ef03664c5d6c9a984a219a4fc99f8b"
+      },
+      {
+        "level": 5,
+        "inputHash": "2da481ad1f0fcef2c1583d4a3d11a670ddcac99c51cbdd7b5569c3d1026b5a7a",
+        "stateProjection": "state+steps+status+ordered-history",
+        "finiteDomains": {
+          "state": 64,
+          "remainingBudget": 4,
+          "status": 3,
+          "historyMaxLength": 3,
+          "historySequenceUpperBound": 400,
+          "commandAlphabet": 11
+        },
+        "theoreticalUpperBound": 400,
+        "visitedStates": 344,
+        "transitionCount": 3784,
+        "reachableStateSetHash": "38b0673efe6a0fbdf88c712574736021cae2b4ed5d851c1b2c77b278efb51c9c",
+        "transitionRelationHash": "8c25d325bbddc583d9bbe2e076894c4d8a8df848bba86e32e073e048eac43957",
+        "historyProjectionCollisions": 272,
+        "commandCoverage": {
+          "allowedApply": 2408,
+          "undo": 344,
+          "restart": 344,
+          "illegalApply": 344,
+          "hint": 344,
+          "terminalSettlementApply": 2065,
+          "budgetExhaustionTerminalStates": 282,
+          "completedTerminalStates": 13
+        },
+        "reachable": true,
+        "shortestSteps": 1,
+        "shortestActions": [
+          {
+            "type": "reverse"
+          }
+        ],
+        "budgetFailureVerified": true,
+        "invariants": {
+          "illegalActionIsNoop": true,
+          "hintIsReadOnly": true,
+          "settlementIsIdempotent": true,
+          "undoRestoresState": true,
+          "restartRestoresInitialState": true
+        },
+        "invariantChecks": {
+          "historyConsistency": {
+            "checked": 344,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "illegalActionIsNoop": {
+            "checked": 344,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "hintIsReadOnly": {
+            "checked": 344,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "settlementIsIdempotent": {
+            "checked": 2065,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "undoRestoresState": {
+            "checked": 344,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "restartRestoresInitialState": {
+            "checked": 344,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "allowedApplySemantics": {
+            "checked": 343,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "budgetExhaustionComplete": {
+            "checked": 282,
+            "failures": 0,
+            "counterexamples": []
+          }
+        },
+        "budget": 3,
+        "start": 3,
+        "target": 48,
+        "allowedActions": [
+          {
+            "type": "reverse"
+          },
+          {
+            "type": "flip",
+            "line": 0
+          },
+          {
+            "type": "flip",
+            "line": 1
+          },
+          {
+            "type": "flip",
+            "line": 2
+          },
+          {
+            "type": "flip",
+            "line": 3
+          },
+          {
+            "type": "flip",
+            "line": 4
+          },
+          {
+            "type": "flip",
+            "line": 5
+          }
+        ],
+        "boundary": "穷举固定关卡预算内所有可达的有序历史会话状态及全部允许动作、撤销、重开、非法动作和提示；不覆盖浏览器、计时或未登记命令。",
+        "resultHash": "a03322940c6592946f113c27b30436241d53a4b260c743b2b79bdc277f54b04e"
+      },
+      {
+        "level": 6,
+        "inputHash": "b8fcfc6c8c10c851a91dc0ae03763a92b709edeae7eaab6f0835ba2cbe453a90",
+        "stateProjection": "state+steps+status+ordered-history",
+        "finiteDomains": {
+          "state": 64,
+          "remainingBudget": 4,
+          "status": 3,
+          "historyMaxLength": 3,
+          "historySequenceUpperBound": 585,
+          "commandAlphabet": 12
+        },
+        "theoreticalUpperBound": 585,
+        "visitedStates": 513,
+        "transitionCount": 6156,
+        "reachableStateSetHash": "d23d05c12142f7314d29711a3034281194b188981e2f09c2e58486e14f54d885",
+        "transitionRelationHash": "34fd6dd16d2086af3ea98d4fa0cf14e74c09208625bd502b321bea57703fe5cf",
+        "historyProjectionCollisions": 430,
+        "commandCoverage": {
+          "allowedApply": 4104,
+          "undo": 513,
+          "restart": 513,
+          "illegalApply": 513,
+          "hint": 513,
+          "terminalSettlementApply": 3592,
+          "budgetExhaustionTerminalStates": 428,
+          "completedTerminalStates": 21
+        },
+        "reachable": true,
+        "shortestSteps": 1,
+        "shortestActions": [
+          {
+            "type": "complement"
+          }
+        ],
+        "budgetFailureVerified": true,
+        "invariants": {
+          "illegalActionIsNoop": true,
+          "hintIsReadOnly": true,
+          "settlementIsIdempotent": true,
+          "undoRestoresState": true,
+          "restartRestoresInitialState": true
+        },
+        "invariantChecks": {
+          "historyConsistency": {
+            "checked": 513,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "illegalActionIsNoop": {
+            "checked": 513,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "hintIsReadOnly": {
+            "checked": 513,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "settlementIsIdempotent": {
+            "checked": 3592,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "undoRestoresState": {
+            "checked": 513,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "restartRestoresInitialState": {
+            "checked": 513,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "allowedApplySemantics": {
+            "checked": 512,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "budgetExhaustionComplete": {
+            "checked": 428,
+            "failures": 0,
+            "counterexamples": []
+          }
+        },
+        "budget": 3,
+        "start": 10,
+        "target": 53,
+        "allowedActions": [
+          {
+            "type": "complement"
+          },
+          {
+            "type": "reverse"
+          },
+          {
+            "type": "flip",
+            "line": 0
+          },
+          {
+            "type": "flip",
+            "line": 1
+          },
+          {
+            "type": "flip",
+            "line": 2
+          },
+          {
+            "type": "flip",
+            "line": 3
+          },
+          {
+            "type": "flip",
+            "line": 4
+          },
+          {
+            "type": "flip",
+            "line": 5
+          }
+        ],
+        "boundary": "穷举固定关卡预算内所有可达的有序历史会话状态及全部允许动作、撤销、重开、非法动作和提示；不覆盖浏览器、计时或未登记命令。",
+        "resultHash": "b299ced075a99c7f9b172fa6ae9398598a1c56d5e5d5a9abbdd6a30deb219bfa"
+      },
+      {
+        "level": 7,
+        "inputHash": "def945c00d9e5e9478b4cf9e7f4700641abefd4d4fc6b2995d421bbdef14d0f9",
+        "stateProjection": "state+steps+status+ordered-history",
+        "finiteDomains": {
+          "state": 64,
+          "remainingBudget": 4,
+          "status": 3,
+          "historyMaxLength": 3,
+          "historySequenceUpperBound": 400,
+          "commandAlphabet": 11
+        },
+        "theoreticalUpperBound": 400,
+        "visitedStates": 316,
+        "transitionCount": 3476,
+        "reachableStateSetHash": "c7aa1606d9a88f4bf4677abed5ca2f3014297c3d666430248516bf9b549a5567",
+        "transitionRelationHash": "d1a3a18e25b5c8e5349aa1631f70d76bafde203f2ad28b28ede1f68f52b0b174",
+        "historyProjectionCollisions": 247,
+        "commandCoverage": {
+          "allowedApply": 2212,
+          "undo": 316,
+          "restart": 316,
+          "illegalApply": 316,
+          "hint": 316,
+          "terminalSettlementApply": 1897,
+          "budgetExhaustionTerminalStates": 256,
+          "completedTerminalStates": 15
+        },
+        "reachable": true,
+        "shortestSteps": 1,
+        "shortestActions": [
+          {
+            "type": "join",
+            "operand": 3
+          }
+        ],
+        "budgetFailureVerified": true,
+        "invariants": {
+          "illegalActionIsNoop": true,
+          "hintIsReadOnly": true,
+          "settlementIsIdempotent": true,
+          "undoRestoresState": true,
+          "restartRestoresInitialState": true
+        },
+        "invariantChecks": {
+          "historyConsistency": {
+            "checked": 316,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "illegalActionIsNoop": {
+            "checked": 316,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "hintIsReadOnly": {
+            "checked": 316,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "settlementIsIdempotent": {
+            "checked": 1897,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "undoRestoresState": {
+            "checked": 316,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "restartRestoresInitialState": {
+            "checked": 316,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "allowedApplySemantics": {
+            "checked": 315,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "budgetExhaustionComplete": {
+            "checked": 256,
+            "failures": 0,
+            "counterexamples": []
+          }
+        },
+        "budget": 3,
+        "start": 0,
+        "target": 3,
+        "allowedActions": [
+          {
+            "type": "join",
+            "operand": 3
+          },
+          {
+            "type": "flip",
+            "line": 0
+          },
+          {
+            "type": "flip",
+            "line": 1
+          },
+          {
+            "type": "flip",
+            "line": 2
+          },
+          {
+            "type": "flip",
+            "line": 3
+          },
+          {
+            "type": "flip",
+            "line": 4
+          },
+          {
+            "type": "flip",
+            "line": 5
+          }
+        ],
+        "boundary": "穷举固定关卡预算内所有可达的有序历史会话状态及全部允许动作、撤销、重开、非法动作和提示；不覆盖浏览器、计时或未登记命令。",
+        "resultHash": "517e3c5b9e1922478551f1b057b64340024ca104e1f8b39218d4cca78cfefda7"
+      },
+      {
+        "level": 8,
+        "inputHash": "1dc0df25cf01e83cccc7d5842f6ccda58613b0786596f531f9823efed5ad360a",
+        "stateProjection": "state+steps+status+ordered-history",
+        "finiteDomains": {
+          "state": 64,
+          "remainingBudget": 4,
+          "status": 3,
+          "historyMaxLength": 3,
+          "historySequenceUpperBound": 400,
+          "commandAlphabet": 11
+        },
+        "theoreticalUpperBound": 400,
+        "visitedStates": 316,
+        "transitionCount": 3476,
+        "reachableStateSetHash": "f1df20343b17a2b6d602b5bb02eebbdc9f77c0c1cd9e8153f4548352493fa700",
+        "transitionRelationHash": "a0f8938dd1e9cb30773f453d55225cb027991020a24d251cda919f3825c538d3",
+        "historyProjectionCollisions": 251,
+        "commandCoverage": {
+          "allowedApply": 2212,
+          "undo": 316,
+          "restart": 316,
+          "illegalApply": 316,
+          "hint": 316,
+          "terminalSettlementApply": 1897,
+          "budgetExhaustionTerminalStates": 246,
+          "completedTerminalStates": 25
+        },
+        "reachable": true,
+        "shortestSteps": 1,
+        "shortestActions": [
+          {
+            "type": "meet",
+            "operand": 3
+          }
+        ],
+        "budgetFailureVerified": true,
+        "invariants": {
+          "illegalActionIsNoop": true,
+          "hintIsReadOnly": true,
+          "settlementIsIdempotent": true,
+          "undoRestoresState": true,
+          "restartRestoresInitialState": true
+        },
+        "invariantChecks": {
+          "historyConsistency": {
+            "checked": 316,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "illegalActionIsNoop": {
+            "checked": 316,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "hintIsReadOnly": {
+            "checked": 316,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "settlementIsIdempotent": {
+            "checked": 1897,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "undoRestoresState": {
+            "checked": 316,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "restartRestoresInitialState": {
+            "checked": 316,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "allowedApplySemantics": {
+            "checked": 315,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "budgetExhaustionComplete": {
+            "checked": 246,
+            "failures": 0,
+            "counterexamples": []
+          }
+        },
+        "budget": 3,
+        "start": 63,
+        "target": 3,
+        "allowedActions": [
+          {
+            "type": "meet",
+            "operand": 3
+          },
+          {
+            "type": "flip",
+            "line": 0
+          },
+          {
+            "type": "flip",
+            "line": 1
+          },
+          {
+            "type": "flip",
+            "line": 2
+          },
+          {
+            "type": "flip",
+            "line": 3
+          },
+          {
+            "type": "flip",
+            "line": 4
+          },
+          {
+            "type": "flip",
+            "line": 5
+          }
+        ],
+        "boundary": "穷举固定关卡预算内所有可达的有序历史会话状态及全部允许动作、撤销、重开、非法动作和提示；不覆盖浏览器、计时或未登记命令。",
+        "resultHash": "48d0f2286c1bc32ba5e4bda2c8ec265e33356fb6bde91c76867e2206cd3f3fa6"
+      },
+      {
+        "level": 9,
+        "inputHash": "044e74204d25c51cc70c3a3f4ae3ac8173323c7fd2785435a63b423e51f19d37",
+        "stateProjection": "state+steps+status+ordered-history",
+        "finiteDomains": {
+          "state": 64,
+          "remainingBudget": 4,
+          "status": 3,
+          "historyMaxLength": 3,
+          "historySequenceUpperBound": 585,
+          "commandAlphabet": 12
+        },
+        "theoreticalUpperBound": 585,
+        "visitedStates": 473,
+        "transitionCount": 5676,
+        "reachableStateSetHash": "4492543fc8f7765be3e2dab1e127a114e9578a99d8026b946cfe6c21f0908284",
+        "transitionRelationHash": "0c07d94c1be9f1f23e33486980a5e174845d331a86123a1d5b5ca67d01826002",
+        "historyProjectionCollisions": 390,
+        "commandCoverage": {
+          "allowedApply": 3784,
+          "undo": 473,
+          "restart": 473,
+          "illegalApply": 473,
+          "hint": 473,
+          "terminalSettlementApply": 3312,
+          "budgetExhaustionTerminalStates": 383,
+          "completedTerminalStates": 31
+        },
+        "reachable": true,
+        "shortestSteps": 1,
+        "shortestActions": [
+          {
+            "type": "join",
+            "operand": 48
+          }
+        ],
+        "budgetFailureVerified": true,
+        "invariants": {
+          "illegalActionIsNoop": true,
+          "hintIsReadOnly": true,
+          "settlementIsIdempotent": true,
+          "undoRestoresState": true,
+          "restartRestoresInitialState": true
+        },
+        "invariantChecks": {
+          "historyConsistency": {
+            "checked": 473,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "illegalActionIsNoop": {
+            "checked": 473,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "hintIsReadOnly": {
+            "checked": 473,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "settlementIsIdempotent": {
+            "checked": 3312,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "undoRestoresState": {
+            "checked": 473,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "restartRestoresInitialState": {
+            "checked": 473,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "allowedApplySemantics": {
+            "checked": 472,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "budgetExhaustionComplete": {
+            "checked": 383,
+            "failures": 0,
+            "counterexamples": []
+          }
+        },
+        "budget": 3,
+        "start": 1,
+        "target": 49,
+        "allowedActions": [
+          {
+            "type": "join",
+            "operand": 48
+          },
+          {
+            "type": "meet",
+            "operand": 49
+          },
+          {
+            "type": "flip",
+            "line": 0
+          },
+          {
+            "type": "flip",
+            "line": 1
+          },
+          {
+            "type": "flip",
+            "line": 2
+          },
+          {
+            "type": "flip",
+            "line": 3
+          },
+          {
+            "type": "flip",
+            "line": 4
+          },
+          {
+            "type": "flip",
+            "line": 5
+          }
+        ],
+        "boundary": "穷举固定关卡预算内所有可达的有序历史会话状态及全部允许动作、撤销、重开、非法动作和提示；不覆盖浏览器、计时或未登记命令。",
+        "resultHash": "dc16ee631399e9fe46428afb81b74600230e6d5163a4813d6c98642908574c44"
+      },
+      {
+        "level": 10,
+        "inputHash": "69c0ae6367fe51291b79d3e9262c2b6d973661b6ac6f2e752147bf8f59c0a785",
+        "stateProjection": "state+steps+status+ordered-history",
+        "finiteDomains": {
+          "state": 64,
+          "remainingBudget": 4,
+          "status": 3,
+          "historyMaxLength": 3,
+          "historySequenceUpperBound": 400,
+          "commandAlphabet": 11
+        },
+        "theoreticalUpperBound": 400,
+        "visitedStates": 344,
+        "transitionCount": 3784,
+        "reachableStateSetHash": "d366de10593774f2c84acd6a15c59369de9289e62b698f2b6a4b3ffb31c3db48",
+        "transitionRelationHash": "02b72f89e17a89b329bec2630117041198a98f929084d44be60967af108046c7",
+        "historyProjectionCollisions": 288,
+        "commandCoverage": {
+          "allowedApply": 2408,
+          "undo": 344,
+          "restart": 344,
+          "illegalApply": 344,
+          "hint": 344,
+          "terminalSettlementApply": 2065,
+          "budgetExhaustionTerminalStates": 276,
+          "completedTerminalStates": 19
+        },
+        "reachable": true,
+        "shortestSteps": 1,
+        "shortestActions": [
+          {
+            "type": "xor",
+            "operand": 7
+          }
+        ],
+        "budgetFailureVerified": true,
+        "invariants": {
+          "illegalActionIsNoop": true,
+          "hintIsReadOnly": true,
+          "settlementIsIdempotent": true,
+          "undoRestoresState": true,
+          "restartRestoresInitialState": true
+        },
+        "invariantChecks": {
+          "historyConsistency": {
+            "checked": 344,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "illegalActionIsNoop": {
+            "checked": 344,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "hintIsReadOnly": {
+            "checked": 344,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "settlementIsIdempotent": {
+            "checked": 2065,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "undoRestoresState": {
+            "checked": 344,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "restartRestoresInitialState": {
+            "checked": 344,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "allowedApplySemantics": {
+            "checked": 343,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "budgetExhaustionComplete": {
+            "checked": 276,
+            "failures": 0,
+            "counterexamples": []
+          }
+        },
+        "budget": 3,
+        "start": 0,
+        "target": 7,
+        "allowedActions": [
+          {
+            "type": "xor",
+            "operand": 7
+          },
+          {
+            "type": "flip",
+            "line": 0
+          },
+          {
+            "type": "flip",
+            "line": 1
+          },
+          {
+            "type": "flip",
+            "line": 2
+          },
+          {
+            "type": "flip",
+            "line": 3
+          },
+          {
+            "type": "flip",
+            "line": 4
+          },
+          {
+            "type": "flip",
+            "line": 5
+          }
+        ],
+        "boundary": "穷举固定关卡预算内所有可达的有序历史会话状态及全部允许动作、撤销、重开、非法动作和提示；不覆盖浏览器、计时或未登记命令。",
+        "resultHash": "97894f07e6dc9c3357d14b306bdc5bd71fc73e74d132a78e3dbb15177b90660e"
+      },
+      {
+        "level": 11,
+        "inputHash": "410c919a5f77cb8b7dd3fbf42b1514549bcc2da16b92902cdd2c3c4425796a3e",
+        "stateProjection": "state+steps+status+ordered-history",
+        "finiteDomains": {
+          "state": 64,
+          "remainingBudget": 4,
+          "status": 3,
+          "historyMaxLength": 3,
+          "historySequenceUpperBound": 400,
+          "commandAlphabet": 11
+        },
+        "theoreticalUpperBound": 400,
+        "visitedStates": 344,
+        "transitionCount": 3784,
+        "reachableStateSetHash": "38f4cd3cbb8a6844c40e57108816c697b76cc8a4e704fa04b2cb5ba1498c0e5b",
+        "transitionRelationHash": "606d5f71b12d23d23729e1f827d33e3b3018f78c55a92db03986a3c951100ed6",
+        "historyProjectionCollisions": 272,
+        "commandCoverage": {
+          "allowedApply": 2408,
+          "undo": 344,
+          "restart": 344,
+          "illegalApply": 344,
+          "hint": 344,
+          "terminalSettlementApply": 2065,
+          "budgetExhaustionTerminalStates": 282,
+          "completedTerminalStates": 13
+        },
+        "reachable": true,
+        "shortestSteps": 1,
+        "shortestActions": [
+          {
+            "type": "xor",
+            "operand": 63
+          }
+        ],
+        "budgetFailureVerified": true,
+        "invariants": {
+          "illegalActionIsNoop": true,
+          "hintIsReadOnly": true,
+          "settlementIsIdempotent": true,
+          "undoRestoresState": true,
+          "restartRestoresInitialState": true
+        },
+        "invariantChecks": {
+          "historyConsistency": {
+            "checked": 344,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "illegalActionIsNoop": {
+            "checked": 344,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "hintIsReadOnly": {
+            "checked": 344,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "settlementIsIdempotent": {
+            "checked": 2065,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "undoRestoresState": {
+            "checked": 344,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "restartRestoresInitialState": {
+            "checked": 344,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "allowedApplySemantics": {
+            "checked": 343,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "budgetExhaustionComplete": {
+            "checked": 282,
+            "failures": 0,
+            "counterexamples": []
+          }
+        },
+        "budget": 3,
+        "start": 42,
+        "target": 21,
+        "allowedActions": [
+          {
+            "type": "xor",
+            "operand": 63
+          },
+          {
+            "type": "flip",
+            "line": 0
+          },
+          {
+            "type": "flip",
+            "line": 1
+          },
+          {
+            "type": "flip",
+            "line": 2
+          },
+          {
+            "type": "flip",
+            "line": 3
+          },
+          {
+            "type": "flip",
+            "line": 4
+          },
+          {
+            "type": "flip",
+            "line": 5
+          }
+        ],
+        "boundary": "穷举固定关卡预算内所有可达的有序历史会话状态及全部允许动作、撤销、重开、非法动作和提示；不覆盖浏览器、计时或未登记命令。",
+        "resultHash": "7f6a1ea9a17577881b4579cb573e4d5b6851955e0a593f9544a3e49126a73942"
+      },
+      {
+        "level": 12,
+        "inputHash": "25c8d89c6f6f12ea2ff9912c845b49c45a1047af7d48ae1dd0e2422b1c9358a7",
+        "stateProjection": "state+steps+status+ordered-history",
+        "finiteDomains": {
+          "state": 64,
+          "remainingBudget": 4,
+          "status": 3,
+          "historyMaxLength": 3,
+          "historySequenceUpperBound": 585,
+          "commandAlphabet": 12
+        },
+        "theoreticalUpperBound": 585,
+        "visitedStates": 441,
+        "transitionCount": 5292,
+        "reachableStateSetHash": "fed952cb64f477f0e78f6507f555c08d7e05f9c29e55e6cb676cdb1e7ad80bfb",
+        "transitionRelationHash": "20564518676ea8c289cae0dd6beb0e59ad50ab4af93cd156f6d7c803bbd9eb64",
+        "historyProjectionCollisions": 369,
+        "commandCoverage": {
+          "allowedApply": 3528,
+          "undo": 441,
+          "restart": 441,
+          "illegalApply": 441,
+          "hint": 441,
+          "terminalSettlementApply": 3088,
+          "budgetExhaustionTerminalStates": 360,
+          "completedTerminalStates": 26
+        },
+        "reachable": true,
+        "shortestSteps": 1,
+        "shortestActions": [
+          {
+            "type": "xor",
+            "operand": 63
+          }
+        ],
+        "budgetFailureVerified": true,
+        "invariants": {
+          "illegalActionIsNoop": true,
+          "hintIsReadOnly": true,
+          "settlementIsIdempotent": true,
+          "undoRestoresState": true,
+          "restartRestoresInitialState": true
+        },
+        "invariantChecks": {
+          "historyConsistency": {
+            "checked": 441,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "illegalActionIsNoop": {
+            "checked": 441,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "hintIsReadOnly": {
+            "checked": 441,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "settlementIsIdempotent": {
+            "checked": 3088,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "undoRestoresState": {
+            "checked": 441,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "restartRestoresInitialState": {
+            "checked": 441,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "allowedApplySemantics": {
+            "checked": 440,
+            "failures": 0,
+            "counterexamples": []
+          },
+          "budgetExhaustionComplete": {
+            "checked": 360,
+            "failures": 0,
+            "counterexamples": []
+          }
+        },
+        "budget": 3,
+        "start": 9,
+        "target": 54,
+        "allowedActions": [
+          {
+            "type": "xor",
+            "operand": 63
+          },
+          {
+            "type": "complement"
+          },
+          {
+            "type": "flip",
+            "line": 0
+          },
+          {
+            "type": "flip",
+            "line": 1
+          },
+          {
+            "type": "flip",
+            "line": 2
+          },
+          {
+            "type": "flip",
+            "line": 3
+          },
+          {
+            "type": "flip",
+            "line": 4
+          },
+          {
+            "type": "flip",
+            "line": 5
+          }
+        ],
+        "boundary": "穷举固定关卡预算内所有可达的有序历史会话状态及全部允许动作、撤销、重开、非法动作和提示；不覆盖浏览器、计时或未登记命令。",
+        "resultHash": "622a712f4cc3efcd98e8720d7817e64a1a0dfd45ab41a0d94484eb1db13c6fe1"
+      }
+    ],
+    "summary": {
+      "allFinite": true,
+      "allReachableSessionStatesExhausted": true,
+      "totalVisitedStates": 24100,
+      "totalTransitions": 264622,
+      "totalCounterexamples": 0
+    },
+    "storage": {
+      "classes": [
+        {
+          "id": "current-valid",
+          "input": {
+            "progressRaw": "{\"version\":1,\"highestUnlockedLevel\":1,\"bestSteps\":[null,null,null,null,null,null,null,null,null,null,null,null],\"stars\":[0,0,0,0,0,0,0,0,0,0,0,0]}",
+            "settingsRaw": "{\"muted\":true,\"reducedMotion\":false}"
+          },
+          "inputHash": "a889ce86139c13b8c9de4f738ccbde5c9f42bc8c5bc1b5e045fccb2b6ecab1ba",
+          "output": {
+            "progress": {
+              "version": 1,
+              "highestUnlockedLevel": 1,
+              "bestSteps": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "stars": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "settings": {
+              "muted": true,
+              "reducedMotion": false
+            }
+          },
+          "outputHash": "46533db158b8a32cb54ffffaa4d4e11dfaeb985e0dbdfd3af9cbaf62b8653398",
+          "passed": true
+        },
+        {
+          "id": "legacy-valid",
+          "input": {
+            "progressRaw": "{\"version\":0,\"unlocked\":2,\"best\":{\"1\":1},\"ratings\":{\"1\":3}}",
+            "settingsRaw": "{\"muted\":true,\"reducedMotion\":false}"
+          },
+          "inputHash": "b3ebc462ae3bc2c2742743653fbad3728ed019ee703183644aac4de915f39c0f",
+          "output": {
+            "progress": {
+              "version": 1,
+              "highestUnlockedLevel": 2,
+              "bestSteps": [
+                1,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "stars": [
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "settings": {
+              "muted": true,
+              "reducedMotion": false
+            }
+          },
+          "outputHash": "1354de58a4cf8bfa097350c4b1a47abd5b2d61b0c64906efc600f78b3795e0ed",
+          "passed": true
+        },
+        {
+          "id": "malformed-json",
+          "input": {
+            "progressRaw": "{",
+            "settingsRaw": "{\"muted\":true,\"reducedMotion\":false}"
+          },
+          "inputHash": "798ef5b06e176d10047cbe93b099f81af08fb6720069d1d759ebcd27a2af8937",
+          "output": {
+            "progress": {
+              "version": 1,
+              "highestUnlockedLevel": 1,
+              "bestSteps": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "stars": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "settings": {
+              "muted": true,
+              "reducedMotion": false
+            }
+          },
+          "outputHash": "46533db158b8a32cb54ffffaa4d4e11dfaeb985e0dbdfd3af9cbaf62b8653398",
+          "passed": true
+        },
+        {
+          "id": "wrong-types",
+          "input": {
+            "progressRaw": "{\"version\":1,\"highestUnlockedLevel\":\"x\"}",
+            "settingsRaw": "{\"muted\":true,\"reducedMotion\":false}"
+          },
+          "inputHash": "52eadb986fd28bbbfd1285a9d1a44c63a8e0505a420548cad6adab0061a38f39",
+          "output": {
+            "progress": {
+              "version": 1,
+              "highestUnlockedLevel": 1,
+              "bestSteps": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "stars": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "settings": {
+              "muted": true,
+              "reducedMotion": false
+            }
+          },
+          "outputHash": "46533db158b8a32cb54ffffaa4d4e11dfaeb985e0dbdfd3af9cbaf62b8653398",
+          "passed": true
+        },
+        {
+          "id": "out-of-range",
+          "input": {
+            "progressRaw": "{\"version\":1,\"highestUnlockedLevel\":99,\"bestSteps\":[null,null,null,null,null,null,null,null,null,null,null,null],\"stars\":[0,0,0,0,0,0,0,0,0,0,0,0]}",
+            "settingsRaw": "{\"muted\":true,\"reducedMotion\":false}"
+          },
+          "inputHash": "157c335b86e2ac6e2b9ba6ca72c60934729721a3ade1c8b3d2043f2e63cd8765",
+          "output": {
+            "progress": {
+              "version": 1,
+              "highestUnlockedLevel": 1,
+              "bestSteps": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "stars": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "settings": {
+              "muted": true,
+              "reducedMotion": false
+            }
+          },
+          "outputHash": "46533db158b8a32cb54ffffaa4d4e11dfaeb985e0dbdfd3af9cbaf62b8653398",
+          "passed": true
+        },
+        {
+          "id": "future-version",
+          "input": {
+            "progressRaw": "{\"version\":99,\"highestUnlockedLevel\":1,\"bestSteps\":[null,null,null,null,null,null,null,null,null,null,null,null],\"stars\":[0,0,0,0,0,0,0,0,0,0,0,0]}",
+            "settingsRaw": "{\"muted\":true,\"reducedMotion\":false}"
+          },
+          "inputHash": "d1744e87eb68c79f4c3326948c6237f8d3bd4edecee51829e64ebc1119366777",
+          "output": {
+            "progress": {
+              "version": 1,
+              "highestUnlockedLevel": 1,
+              "bestSteps": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "stars": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "settings": {
+              "muted": true,
+              "reducedMotion": false
+            }
+          },
+          "outputHash": "46533db158b8a32cb54ffffaa4d4e11dfaeb985e0dbdfd3af9cbaf62b8653398",
+          "passed": true
+        },
+        {
+          "id": "unknown-fields",
+          "input": {
+            "progressRaw": "{\"version\":1,\"highestUnlockedLevel\":1,\"bestSteps\":[null,null,null,null,null,null,null,null,null,null,null,null],\"stars\":[0,0,0,0,0,0,0,0,0,0,0,0],\"ignored\":true}",
+            "settingsRaw": "{\"muted\":true,\"reducedMotion\":false}"
+          },
+          "inputHash": "4bfbce044b7630ff7c0a18528c53e33e1ee21afafa548d161ce3c573cf5727f8",
+          "output": {
+            "progress": {
+              "version": 1,
+              "highestUnlockedLevel": 1,
+              "bestSteps": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "stars": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "settings": {
+              "muted": true,
+              "reducedMotion": false
+            }
+          },
+          "outputHash": "46533db158b8a32cb54ffffaa4d4e11dfaeb985e0dbdfd3af9cbaf62b8653398",
+          "passed": true
+        }
+      ],
+      "allPassed": true,
+      "settingsKeyIsolated": true,
+      "unknownFieldsIsolated": true
+    },
+    "boundary": "完整穷举固定 12 关预算内所有可达有序历史会话状态及登记命令；不把 state+remainingBudget 当作撤销语义的等价约简，也不覆盖浏览器、计时或未登记命令。",
+    "resultHash": "6627a449bb271f0c6c79bc4e7c428856bd46d94847e0ff78ea69e312e9ac97ae"
+  },
+  "descriptiveStatistics": {
+    "artifact": "/data/descriptive-statistics.json",
+    "artifactHash": "47bd9cd8c4b80edbf0013d18a61bf7cebf25384b8c607565e0adeb295b844b4c",
+    "inputHash": "6edf0a270d32ae9286589cd80cc849885077325168d3c9a7c67379b2aa303599",
+    "boundary": "这些分布与熵仅描述固定的 64 状态空间和固定语料样本；不推出经典语义、因果关系或预测效力。"
+  },
+  "resultHash": "ef1c4d1e1776d550a876486300bd2c575f579d82b8c1b4b456edde16d6eedc2c"
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0.0",
+  "generator": {
+    "mode": "skill-cli",
+    "tool": "imagegen/scripts/image_gen.py",
+    "model": "gpt-image-2",
+    "quality": "high",
+    "generatedAt": "2026-10-29T21:42:39+08:00"
+  },
+  "assets": [
+    {
+      "id": "yijing-proof-texture",
+      "prompt": "Use case: stylized-concept\nAsset type: responsive background texture for a web proof center about the I Ching as a finite mathematical system\nPrimary request: a restrained, low-contrast field of pale handmade Chinese paper with extremely subtle dry-brush ink traces and fine paper fibers, suitable behind dense user interface content\nScene/backdrop: flat archival paper surface, softly lit, no horizon and no objects\nSubject: abstract paper grain and sparse nonrepresentational ink wash only\nStyle/medium: refined contemporary ink-on-paper texture, quiet scholarly atmosphere, realistic paper fibers\nComposition/framing: seamless-feeling wide field, even visual weight, generous calm negative space, no focal symbol\nLighting/mood: diffuse neutral daylight, contemplative and precise\nColor palette: warm off-white paper, charcoal gray, a very restrained muted mineral green accent\nMaterials/textures: xuan paper fibers, dry brush granulation, faint deckle variation\nConstraints: decorative non-informational background only; no readable text; no Chinese characters; no Latin letters; no numbers; no hexagrams; no trigrams; no yin-yang symbol; no mathematical diagrams; no graph nodes or edges; no seals; no watermark; no people; no objects; no fake manuscript; low contrast enough for dark UI text",
+      "negativeConstraints": [
+        "no readable text or characters",
+        "no hexagrams, trigrams, or yin-yang symbols",
+        "no mathematical diagrams, graph nodes, or semantic edges",
+        "no seals, watermark, people, objects, or fake manuscript"
+      ],
+      "source": {
+        "path": "assets/generated/source/yijing-proof-texture-gpt-image-2-original.png",
+        "format": "png",
+        "width": 1672,
+        "height": 940,
+        "bytes": 2768538,
+        "sha256": "43c79f776e195ea9c11e2023c6d666a50cdef01daad4a590dd192877ee69526d"
+      },
+      "variants": [
+        { "path": "assets/generated/yijing-proof-texture-640.webp", "format": "webp", "width": 640, "height": 360, "bytes": 10900, "sha256": "dd7a2ba18e105f37a32a914c1b0189b592ccc4df67369b8688198457f8dfc10c" },
+        { "path": "assets/generated/yijing-proof-texture-1280.webp", "format": "webp", "width": 1280, "height": 720, "bytes": 54628, "sha256": "f2c185bbdae690f7d5f7ee7639043bdff058907234f5d559bce847109fe6bb21" }
+      ],
+      "decorative": true,
+      "alt": "",
+      "fallback": "淡色纸纹装饰层不可用时，保留纯色纸面背景。",
+      "usageBoundary": "仅作装饰气氛，不承载证明、数学真值、卦象关系或古代原文。",
+      "manualEdits": ["Pillow LANCZOS 等比缩放", "WebP quality 72 编码；未进行语义性图像修改"]
+    },
+    {
+      "id": "yijing-lattice-atmosphere",
+      "prompt": "Use case: stylized-concept\nAsset type: responsive atmospheric background for the lattice and corpus areas of an educational web game\nPrimary request: a restrained abstract composition of pale paper fibers and sparse, soft charcoal ink lines that suggest movement and transformation without depicting any actual system\nScene/backdrop: flat handmade paper surface with subtle natural fibers, no horizon and no objects\nSubject: nonrepresentational wisps, dry-brush fragments, and very faint broken ink paths only\nStyle/medium: contemporary minimalist ink wash on xuan paper, refined museum-catalog finish\nComposition/framing: wide balanced field with broad negative space, no central icon, no recognizable pattern, visually quiet at small crops\nLighting/mood: soft neutral ambient light, calm, analytical, understated\nColor palette: soft ivory, charcoal, a tiny muted cinnabar accent, and a restrained mineral green-gray\nMaterials/textures: paper pulp fibers, feathered ink capillary edges, dry brush grain\nConstraints: decorative atmosphere only; no readable text; no Chinese characters; no Latin letters; no numbers; no hexagrams; no trigrams; no yin-yang symbol; no diagrams; no graphs; no nodes; no edges with semantic structure; no seals; no watermark; no people; no objects; no fake manuscript; low contrast enough to sit behind interface content",
+      "negativeConstraints": [
+        "no readable text or characters",
+        "no hexagrams, trigrams, or yin-yang symbols",
+        "no diagrams, graphs, nodes, or semantic edges",
+        "no seals, watermark, people, objects, or fake manuscript"
+      ],
+      "source": {
+        "path": "assets/generated/source/yijing-lattice-atmosphere-gpt-image-2-original.png",
+        "format": "png",
+        "width": 1672,
+        "height": 941,
+        "bytes": 2903363,
+        "sha256": "b01bdbd91394e1bbeca65543577673fd6e0e08ce1c5add724b8eecc76a77c528"
+      },
+      "variants": [
+        { "path": "assets/generated/yijing-lattice-atmosphere-640.webp", "format": "webp", "width": 640, "height": 360, "bytes": 13810, "sha256": "4ff3aff3f6e3ce6a071ec0c15b508b8929a57a376242e626bb3da9ac54bcee50" },
+        { "path": "assets/generated/yijing-lattice-atmosphere-1280.webp", "format": "webp", "width": 1280, "height": 720, "bytes": 65970, "sha256": "248b5bf878ecb1cfbf719054e38ab77790740574309aa4d50e3a776504936948" }
+      ],
+      "decorative": true,
+      "alt": "",
+      "fallback": "抽象墨迹装饰层不可用时，保留纯色纸面背景。",
+      "usageBoundary": "仅作装饰气氛，不承载证明、数学真值、卦象关系或古代原文。",
+      "manualEdits": ["Pillow LANCZOS 等比缩放", "WebP quality 72 编码；未进行语义性图像修改"]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.1.0",
+  "corpusVersion": "selected-transmitted-base-2026-10-29",
+  "total": 1132,
+  "coverageRatio": 1,
+  "traceableRatio": 1,
+  "immutableRevisionRatio": 1,
+  "emptyTexts": 0,
+  "duplicateIds": 0,
+  "duplicatePositions": 0,
+  "unclassified": 0,
+  "hashMismatches": 0,
+  "boundary": "仅针对选定固定传世底本版本；不覆盖全部出土本、异文与历代注疏。"
+}

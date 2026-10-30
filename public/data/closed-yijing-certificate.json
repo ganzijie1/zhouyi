@@ -1,0 +1,256 @@
+{
+  "schemaVersion": "1.0.0",
+  "systemVersion": "closed-yijing-1.0.0",
+  "title": "封闭周易形式系统 CYFS",
+  "inputHash": "048960c3684115a5cd7378037b4974acce35961c399c3343051376142278e0ee",
+  "scope": {
+    "corpusVersion": "selected-transmitted-base-2026-10-29",
+    "paragraphs": 1132,
+    "states": 64,
+    "works": 10
+  },
+  "foundations": {
+    "theory": "ZFC（含选择公理）+ 经典二值逻辑",
+    "axioms": [
+      {
+        "id": "axiom:zfc-extensionality",
+        "name": "外延公理",
+        "layer": "ZFC 元理论"
+      },
+      {
+        "id": "axiom:zfc-empty-set",
+        "name": "空集公理",
+        "layer": "ZFC 元理论"
+      },
+      {
+        "id": "axiom:zfc-pairing",
+        "name": "配对公理",
+        "layer": "ZFC 元理论"
+      },
+      {
+        "id": "axiom:zfc-union",
+        "name": "并集公理",
+        "layer": "ZFC 元理论"
+      },
+      {
+        "id": "axiom:zfc-power-set",
+        "name": "幂集公理",
+        "layer": "ZFC 元理论"
+      },
+      {
+        "id": "axiom:zfc-infinity",
+        "name": "无穷公理",
+        "layer": "ZFC 元理论"
+      },
+      {
+        "id": "axiom:zfc-separation",
+        "name": "分离公理模式",
+        "layer": "ZFC 元理论"
+      },
+      {
+        "id": "axiom:zfc-replacement",
+        "name": "替换公理模式",
+        "layer": "ZFC 元理论"
+      },
+      {
+        "id": "axiom:zfc-foundation",
+        "name": "正则公理",
+        "layer": "ZFC 元理论"
+      },
+      {
+        "id": "axiom:zfc-choice",
+        "name": "选择公理",
+        "layer": "ZFC 元理论"
+      }
+    ],
+    "note": "选择公理作为元理论登记；有限语义模型的构造不依赖选择公理。证书不声称在 ZFC 内证明 ZFC 自身一致性。"
+  },
+  "objectTheory": {
+    "axioms": [
+      {
+        "id": "axiom:logic-two-valued",
+        "name": "每个封闭原子命题恰取真、假之一",
+        "layer": "经典命题逻辑"
+      },
+      {
+        "id": "axiom:logic-compositional",
+        "name": "非、且、或、蕴含按真值表递归解释",
+        "layer": "经典命题逻辑"
+      },
+      {
+        "id": "axiom:semantic-corpus",
+        "name": "论域恰为固定 manifest 中按顺序排列的全部段落",
+        "layer": "语义"
+      },
+      {
+        "id": "axiom:semantic-ordinal",
+        "name": "第 i 段的编码为 i，解码 i 返回第 i 段",
+        "layer": "语义"
+      },
+      {
+        "id": "axiom:semantic-text",
+        "name": "段落的形式内容包含规范化原文及其 SHA-256",
+        "layer": "语义"
+      },
+      {
+        "id": "axiom:semantic-work",
+        "name": "work(i) 等于 manifest 中第 i 段的作品分类",
+        "layer": "语义"
+      },
+      {
+        "id": "axiom:semantic-state",
+        "name": "state(i)=i mod 64",
+        "layer": "语义"
+      },
+      {
+        "id": "axiom:semantic-order",
+        "name": "before(i,j) 当且仅当 i<j",
+        "layer": "语义"
+      },
+      {
+        "id": "axiom:algebra-b6",
+        "name": "六爻坐标构成六维布尔代数 B6",
+        "layer": "代数"
+      },
+      {
+        "id": "axiom:topology-rank-chain",
+        "name": "开集为 U_k={x∈B6 | rank(x)≥k}（k=0…7）",
+        "layer": "拓扑"
+      }
+    ],
+    "signature": [
+      "entry(i)",
+      "work(i,w)",
+      "state(i,s)",
+      "before(i,j)",
+      "¬",
+      "∧",
+      "∨",
+      "→"
+    ]
+  },
+  "explicitModel": {
+    "layer": "finite object theory (not a finite model of ZFC)",
+    "satisfiable": true,
+    "carrier": "P={0,…,1131}",
+    "truthValues": [
+      false,
+      true
+    ],
+    "works": [
+      "shuogua",
+      "tuan",
+      "wenyan-kun",
+      "wenyan-qian",
+      "xiang",
+      "xici-shang",
+      "xici-xia",
+      "xugua",
+      "zagua",
+      "zhouyi"
+    ],
+    "interpretation": "第 i 个对象就是 manifest.entries[i]；work、state、before 均由语义公理给出的全函数解释。"
+  },
+  "encoding": {
+    "domainCardinality": 1132,
+    "codomainCardinality": 1132,
+    "uniqueCorpusIds": 1132,
+    "roundTrips": 1132,
+    "injective": true,
+    "surjective": true,
+    "lossless": true,
+    "rule": "encode(manifest.entries[i])=i；decode(i)=manifest.entries[i]"
+  },
+  "interpretation": {
+    "assigned": 1132,
+    "undefined": 0,
+    "uniqueOrdinals": 1132,
+    "uniqueSemanticTuples": 1132,
+    "stateRule": "state(i)=i mod 64",
+    "textRetainedExactly": true
+  },
+  "atomicEvaluation": {
+    "method": "exhaustive execution over every finite ground-atom tuple",
+    "predicates": [
+      {
+        "id": "entry",
+        "cases": 1132,
+        "trueCases": 1132,
+        "falseCases": 0,
+        "undefinedCases": 0
+      },
+      {
+        "id": "work",
+        "cases": 11320,
+        "trueCases": 1132,
+        "falseCases": 10188,
+        "undefinedCases": 0
+      },
+      {
+        "id": "state",
+        "cases": 72448,
+        "trueCases": 1132,
+        "falseCases": 71316,
+        "undefinedCases": 0
+      },
+      {
+        "id": "before",
+        "cases": 1281424,
+        "trueCases": 640146,
+        "falseCases": 641278,
+        "undefinedCases": 0
+      }
+    ],
+    "evaluatedCases": 1366324,
+    "trueCases": 643542,
+    "falseCases": 722782,
+    "undefinedCases": 0
+  },
+  "algebra": {
+    "carrier": 64,
+    "structure": "Boolean algebra B6",
+    "operations": [
+      "NOT",
+      "AND",
+      "OR",
+      "XOR"
+    ],
+    "pairChecks": 4096,
+    "tripleChecks": 262144,
+    "failures": 0
+  },
+  "topology": {
+    "openSets": 8,
+    "subfamilies": 256,
+    "containsEmpty": true,
+    "containsUniverse": true,
+    "unionChecks": 256,
+    "intersectionChecks": 256,
+    "failures": 0
+  },
+  "calculus": {
+    "rules": [
+      "atom",
+      "not",
+      "and",
+      "or",
+      "implies"
+    ],
+    "sound": true,
+    "complete": true,
+    "decidable": true,
+    "terminating": true,
+    "proof": "对公式语法树作结构归纳：原子由全解释表决定；每个联结词只递归到严格更小的子式，真时产生证明轨迹，假时产生反证轨迹。"
+  },
+  "completeness": {
+    "corpusExhausted": true,
+    "semanticsTotal": true,
+    "allGroundAtomsDecided": true,
+    "everyWellFormedFormulaDecidable": true,
+    "algebraClosed": true,
+    "topologyClosed": true,
+    "systemInternalCompleteness": true
+  },
+  "boundary": "“完全”仅指由本证书定义的固定语料、符号、语义公理与合法公式；历史原意、注疏和现实效力按定义排除，不属于反例。无限多个可重复书写的公式由一个终止判定程序覆盖，而非逐字符串列出。",
+  "resultHash": "99d4a1a6b573e70b01a2751c6cb93270c62e92f7b2966883d8de43c4e8f78b74"
+}

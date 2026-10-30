@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.1.0",
+  "corpus": {
+    "total": 1132,
+    "expected": 1132,
+    "coverageRatio": 1,
+    "traceableRatio": 1,
+    "immutableRevisionRatio": 1,
+    "emptyTexts": 0,
+    "duplicateIds": 0,
+    "duplicatePositions": 0,
+    "unclassified": 0,
+    "hashMismatches": 0,
+    "sourceSnapshotHash": "d77a1f3bf65e6eb958fb4f34062b02f814f830ce1a2938e19a77c506abb65a62",
+    "sourceSnapshots": [
+      {
+        "id": "zqing-chen-wangbi",
+        "revision": "88dc8f812586eb21ae713e11f26c2e8b564b6f33",
+        "immutableUrl": "https://raw.githubusercontent.com/ZQing-Chen/yijing/88dc8f812586eb21ae713e11f26c2e8b564b6f33/assets/data/gua64.json",
+        "contentHash": "d83018d7898588196b7c89a608a55e95c45bd7b63dbcc78b71cc8fff42edf805",
+        "license": "MIT"
+      },
+      {
+        "id": "muyen-yizhuan-snapshot",
+        "revision": "8ff4ffc8802ee9afd075da875cc3d39e8706be82",
+        "immutableUrl": "https://raw.githubusercontent.com/muyen/decoding-iching/8ff4ffc8802ee9afd075da875cc3d39e8706be82/data/yizhuan/yizhuan_complete.json",
+        "contentHash": "61b9a8edf7922d207aab6ab0233661e20bd130499bb607aab8942b3c8bf8f658",
+        "license": "CC BY-NC-SA 4.0"
+      }
+    ]
+  },
+  "fca": {
+    "objects": 1132,
+    "attributes": 5,
+    "incidences": 1454,
+    "concepts": 18
+  },
+  "claims": {
+    "total": 24,
+    "categories": {
+      "corpus": 1,
+      "closed-system": 3,
+      "structure": 12,
+      "traditional": 2,
+      "fca-graph": 3,
+      "model-info": 3
+    }
+  },
+  "closedSystem": {
+    "version": "closed-yijing-1.0.0",
+    "paragraphs": 1132,
+    "axioms": 20,
+    "roundTrips": 1132,
+    "atomicCases": 1366324,
+    "undefinedCases": 0,
+    "sound": true,
+    "complete": true,
+    "decidable": true,
+    "resultHash": "99d4a1a6b573e70b01a2751c6cb93270c62e92f7b2966883d8de43c4e8f78b74"
+  },
+  "modelChecking": {
+    "levels": 12,
+    "stateProjection": "state+steps+status+ordered-history",
+    "visitedStates": 24100,
+    "transitions": 264622,
+    "counterexamples": 0,
+    "allReachableSessionStatesExhausted": true,
+    "storageClasses": 7,
+    "allPassed": true
+  },
+  "descriptiveStatistics": {
+    "artifactHash": "47bd9cd8c4b80edbf0013d18a61bf7cebf25384b8c607565e0adeb295b844b4c",
+    "stateCardinality": 64,
+    "corpusParagraphs": 1132
+  },
+  "evidenceGraph": {
+    "nodes": 1667,
+    "edges": 7828,
+    "danglingEdges": 0,
+    "sourceReachabilityRatio": 1,
+    "requiredEvidenceCoverageRatio": 1
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "1.0.0",
+  "method": "deterministic-descriptive-counts-1.0.0",
+  "input": {
+    "stateSpaceHash": "885a7dabe59efcc2c5280b2c6288912cf611161ec55dcfd78d61624c2174ca0e",
+    "corpusVersion": "selected-transmitted-base-2026-10-29",
+    "corpusSnapshotHash": "d77a1f3bf65e6eb958fb4f34062b02f814f830ce1a2938e19a77c506abb65a62"
+  },
+  "inputHash": "6edf0a270d32ae9286589cd80cc849885077325168d3c9a7c67379b2aa303599",
+  "sample": {
+    "stateSpace": {
+      "definition": "B6 = {0,1}^6",
+      "cardinality": 64
+    },
+    "corpus": {
+      "version": "selected-transmitted-base-2026-10-29",
+      "paragraphs": 1132,
+      "sourceSnapshotHash": "d77a1f3bf65e6eb958fb4f34062b02f814f830ce1a2938e19a77c506abb65a62"
+    }
+  },
+  "bitDistribution": [
+    {
+      "bit": 1,
+      "zeros": 32,
+      "ones": 32,
+      "entropyBits": 1
+    },
+    {
+      "bit": 2,
+      "zeros": 32,
+      "ones": 32,
+      "entropyBits": 1
+    },
+    {
+      "bit": 3,
+      "zeros": 32,
+      "ones": 32,
+      "entropyBits": 1
+    },
+    {
+      "bit": 4,
+      "zeros": 32,
+      "ones": 32,
+      "entropyBits": 1
+    },
+    {
+      "bit": 5,
+      "zeros": 32,
+      "ones": 32,
+      "entropyBits": 1
+    },
+    {
+      "bit": 6,
+      "zeros": 32,
+      "ones": 32,
+      "entropyBits": 1
+    }
+  ],
+  "rankDistribution": [
+    {
+      "rank": 0,
+      "count": 1
+    },
+    {
+      "rank": 1,
+      "count": 6
+    },
+    {
+      "rank": 2,
+      "count": 15
+    },
+    {
+      "rank": 3,
+      "count": 20
+    },
+    {
+      "rank": 4,
+      "count": 15
+    },
+    {
+      "rank": 5,
+      "count": 6
+    },
+    {
+      "rank": 6,
+      "count": 1
+    }
+  ],
+  "rankEntropyBits": 2.3333620347709894,
+  "termDistribution": [
+    {
+      "term": "天",
+      "count": 304,
+      "paragraphPresence": 156,
+      "presenceEntropyBits": 0.57847238805813
+    },
+    {
+      "term": "地",
+      "count": 153,
+      "paragraphPresence": 104,
+      "presenceEntropyBits": 0.44269025055451455
+    },
+    {
+      "term": "易",
+      "count": 89,
+      "paragraphPresence": 38,
+      "presenceEntropyBits": 0.21198546151923828
+    },
+    {
+      "term": "变",
+      "count": 60,
+      "paragraphPresence": 42,
+      "presenceEntropyBits": 0.22884563753967158
+    },
+    {
+      "term": "吉",
+      "count": 391,
+      "paragraphPresence": 329,
+      "presenceEntropyBits": 0.8695414476858594
+    },
+    {
+      "term": "凶",
+      "count": 148,
+      "paragraphPresence": 125,
+      "presenceEntropyBits": 0.501193632084892
+    },
+    {
+      "term": "悔",
+      "count": 67,
+      "paragraphPresence": 56,
+      "presenceEntropyBits": 0.28414112468157016
+    },
+    {
+      "term": "吝",
+      "count": 38,
+      "paragraphPresence": 36,
+      "presenceEntropyBits": 0.2033504133471999
+    },
+    {
+      "term": "无咎",
+      "count": 175,
+      "paragraphPresence": 165,
+      "presenceEntropyBits": 0.5991264705662772
+    }
+  ],
+  "boundary": "这些分布与熵仅描述固定的 64 状态空间和固定语料样本；不推出经典语义、因果关系或预测效力。",
+  "resultHash": "47bd9cd8c4b80edbf0013d18a61bf7cebf25384b8c607565e0adeb295b844b4c"
+}
